@@ -55,7 +55,7 @@
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="transparencia.html">Transparencia</a></li>
-                <li><a href="transparencia.html">Contacto</a></li>
+                <li><a href="transparencia.html#contacto">Contacto</a></li>
                 <li><a href="login.html">Administrador</a></li>
             </ul>
         </div>
@@ -78,7 +78,7 @@
                             <p>Los Sujetos Obligados deberán poner a disposición del publico y mantener actualizada, en sus respectivos medios electrónicos, de acuerdo con sus facultades, atribuciones, funciones u objeto social, según corresponda, la información por lo menos, de los temas, documentos y politicas que a continuación se señalan.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#" style="color:#BA0913">Ver más</a>
+                            <a href="fraccionescomunes.html" style="color:#BA0913">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                             <p>Además de lo señalado en el artículo 69 de la presente Ley, los órganos autónomos deberán poner a disposición del público y en su caso actualizar la siguiente información.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#" style="color:#BA0913">Ver más</a>
+                            <a href="fraccionesespecificas.html" style="color:#BA0913">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -113,15 +113,16 @@
                 </div>
             </div>
             <hr>
-            <div id="Contacto">
-                <center><h2>Contacto</h2></center>
-                <div id="mapa" style="height:400px; background-color:#333; border-radius:15px">
+            <div id="contacto">
+                <center><h3>Contacto</h3></center>
+                <div id="map" style="height:400px; width:100%; background-color:#333; border-radius:15px">
                 </div>
                 <div class="row">
                     <div class="col s4" style="font-size:12px">
                         <center>
                             <h2><i class="material-icons medium contacticon">location_on</i></h2>
-                            Boulevard Nuevo San Nicolás, S/N
+                            Boulevard Nuevo San Nicolás, S/N<br>
+                            43640 Tulancingo, Hgo
                         </center>
                     </div>
                     <div class="col s4" style="font-size:12px">
@@ -150,6 +151,24 @@
             </div>
           </div>
     </footer>
+    <script>
+      function initMap() {
+        var presidencia = {lat: 20.107492, lng: -98.382192};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: presidencia,
+            mapTypeId: 'satellite'
+        });
+        var marker = new google.maps.Marker({
+          position: presidencia,
+          map: map
+        });
+      }
+    </script>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDO2DalHzpdyQGQ3eVTUCs8EDF0q6NUzk&callback=initMap">
+    </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>    
     <script>
