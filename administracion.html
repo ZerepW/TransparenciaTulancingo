@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ejemplo Tabla</title>
+    <title>Administración - Portal</title>
     
         <link rel="shortcut icon" type="image/x-icon" href="assets/src/ico/favicon.ico" />
         <link rel="apple-touch-icon" sizes="57x57" href="assets/src/ico/apple-icon-57x57.png">
@@ -63,6 +63,9 @@
             color:#7a1778;
             
         }
+        td, th{
+            border-radius:0px;
+        }
     </style>
 </head>
 <body>
@@ -84,14 +87,51 @@
             <center><a class="carousel-item" href="#three!"><img style="max-width:1500px;" src="assets/img/BN03.jpg"></a></center>
     </div><br>
     <div class="container">
-        <h4>Ejemplo Tabla</h4>
-        Descripción de ejemplo para la tabla. <br><hr><br>
-        <iframe style="width:100%; height: 500px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQl6cmnPM1soHtu1m2AmoCiISdpc9pjugnl0WrYInfPTalUz7KmBoczIs76dRKkclbwBGdQd_3HDDe0/pubhtml?widget=true&amp;headers=false&amp;chrome=false"></iframe>
-        <br>
-        <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQl6cmnPM1soHtu1m2AmoCiISdpc9pjugnl0WrYInfPTalUz7KmBoczIs76dRKkclbwBGdQd_3HDDe0/pub?output=xlsx" class="indigo lighten-1 waves-effect waves-light btn">Descargar <i class="material-icons right">file_download</i></a>
-        
-        <hr><br>
+        <h4>Bienvenido Usuario</h4><hr>
 
+        <table class="striped responsive-table">
+                <thead class="purple lighten-1 white-text" >
+                    <tr>
+                        <th>Artículo</th>
+                        <th>Fracción</th>
+                        <th>Tabla</th>
+                        <th>Ult. Actualización</th>
+                        <th>Enlace WEB</th>
+                        <th>Enlace Descarga</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>69</td>
+                        <td>I</td>
+                        <td>A</td>
+                        <td>19/11/2017 01:34</td>
+                        <td><input type="text" value="https://docs.google.com/spreadsheets/d/e/2PACX-1vQl6cmnPM1soHtu1m2AmoCiISdpc9pjugnl0WrYInfPTalUz7KmBoczIs76dRKkclbwBGdQd_3HDDe0/pubhtml"></td>
+                        <td><input type="text" value="https://docs.google.com/spreadsheets/d/e/2PACX-1vQl6cmnPM1soHtu1m2AmoCiISdpc9pjugnl0WrYInfPTalUz7KmBoczIs76dRKkclbwBGdQd_3HDDe0/pub?output=xlsx"></td>
+                        <td><a href="#modal1" class="modal-trigger purple lighten-1 waves-effect waves-light btn"><i class="material-icons">remove_red_eye</i></a><br><br><a class="purple lighten-1 waves-effect waves-light btn"><i class="material-icons">save</i></a></td>
+                    </tr>
+                    <tr>
+                        <td>69</td>
+                        <td>II</td>
+                        <td>A</td>
+                        <td>19/11/2017 01:36</td>
+                        <td><input type="text" value="https://docs.google.com/spreadsheets/d/e/2PACX-1vQl6cmnPM1soHtu1m2AmoCiISdpc9pjugnl0WrYInfPTalUz7KmBoczIs76dRKkclbwBGdQd_3HDDe0/pubhtml"></td>
+                        <td><input type="text" value="https://docs.google.com/spreadsheets/d/e/2PACX-1vQl6cmnPM1soHtu1m2AmoCiISdpc9pjugnl0WrYInfPTalUz7KmBoczIs76dRKkclbwBGdQd_3HDDe0/pub?output=xlsx"></td>
+                        <td><a class="purple lighten-1 waves-effect waves-light btn"><i class="material-icons">remove_red_eye</i></a><br><br><a class="purple lighten-1 waves-effect waves-light btn"><i class="material-icons">save</i></a></td>
+                    </tr>
+                    <tr>
+                        <td>69</td>
+                        <td>II</td>
+                        <td>B</td>
+                        <td>19/11/2017 01:54</td>
+                        <td><input type="text" value="https://docs.google.com/spreadsheets/d/e/2PACX-1vQl6cmnPM1soHtu1m2AmoCiISdpc9pjugnl0WrYInfPTalUz7KmBoczIs76dRKkclbwBGdQd_3HDDe0/pubhtml"></td>
+                        <td><input type="text" value="https://docs.google.com/spreadsheets/d/e/2PACX-1vQl6cmnPM1soHtu1m2AmoCiISdpc9pjugnl0WrYInfPTalUz7KmBoczIs76dRKkclbwBGdQd_3HDDe0/pub?output=xlsx"></td>
+                        <td><a class="purple lighten-1 waves-effect waves-light btn"><i class="material-icons">remove_red_eye</i></a><br><br><a class="purple lighten-1 waves-effect waves-light btn"><i class="material-icons">save</i></a></td>
+                    </tr>
+                </tbody>
+            </table><br>
+        <br><hr><br>
     </div>
     <footer class="page-footer">
         <div class="footer-copyright">
@@ -101,12 +141,29 @@
             </div>
           </div>
     </footer>
+            
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Art. 69</h4>
+            <h6><b>Fracción I</b></h6>
+            <p>Ultima Actualización: 19/11/2017 01:33</p>
+            <p>Descripción del Articulo 69, Fracción I Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum, dui dapibus dapibus pharetra, tortor justo pharetra velit, vel rhoncus est mi vitae ligula. In hac habitasse platea dictumst. Vestibulum semper posuere velit, ac faucibus elit molestie sed. Quisque iaculis nunc dui, sit amet facilisis magna venenatis eget. Nulla varius nisl at mauris tempor varius. Curabitur imperdiet suscipit rutrum. Sed tempor tempus lacus. Nullam id facilisis diam. Etiam aliquet dignissim risus, ut ultrices mi cursus a. Donec at aliquet elit. Sed at gravida diam. Nullam pulvinar auctor ante ut maximus. Duis viverra viverra ex a tristique. Vivamus lacinia non augue sit amet elementum. Curabitur sed luctus purus.</p><br>
+            <a href="ejemplo.html" class="purple lighten-1 waves-effect waves-light btn">Ver Tabla <i class="material-icons right">find_in_page</i></a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQl6cmnPM1soHtu1m2AmoCiISdpc9pjugnl0WrYInfPTalUz7KmBoczIs76dRKkclbwBGdQd_3HDDe0/pub?output=xlsx" class="indigo lighten-1 waves-effect waves-light btn">Descargar <i class="material-icons right">file_download</i></a>
+            
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-purple btn-flat">Cerrar</a>
+        </div>
+    </div>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>    
     <script>
         $( document ).ready(function(){
             $(".button-collapse").sideNav();
             $('.carousel.carousel-slider').carousel({fullWidth: true});
+            $('.modal').modal();
 
         })
     </script>
